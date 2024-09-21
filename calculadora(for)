@@ -1,0 +1,24 @@
+print("Bem vindo a calculadora")
+numero = int(input("Digite um número: "))
+print("1.Soma, 2.Subtração, 3.Multiplicação, 4.Divisão")
+operacao = int(input("Selecione o número da operação desejada: "))
+
+if operacao == 1:
+  for i in range(0,11):
+    soma = numero + i
+    print(f"{i}+{numero}={soma}")
+
+elif operacao == 2:
+  for i in range(0,11):
+    sub = i - numero
+    print(f"{i}-{numero}={sub}")
+
+elif operacao == 3:
+  for i in range(0,11):
+   multi = i * numero
+   print(f"{i}*{numero}={multi}")
+
+elif operacao == 4:
+  for i in range(0,11):
+    div = i / numero
+    print(f"{i}/{numero}={div}")
