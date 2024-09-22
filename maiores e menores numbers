@@ -1,0 +1,9 @@
+num1 = float(input("Digite seu primeiro número: "))
+num2 = float(input("Digite seu segundo número: "))
+num3 = float(input("Digite seu terceiro número: "))
+
+maior_num = max(num1, num2, num3)
+menor_num = min(num1, num2, num3)
+
+print(f"O maior número digitado é {maior_num}")
+print(f"O menor número digitado é {menor_num}")
