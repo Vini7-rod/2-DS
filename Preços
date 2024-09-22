@@ -1,0 +1,15 @@
+print("Bem vindo a sua consulta de produtos")
+
+while True:
+    novo_produto = input("Digite o nome do produto: ")
+    preco = float(input("Digite o preço do produto: "))
+    valor_desconto = float(input("Digite o valor do desconto: "))
+    desconto = (preco)*(valor_desconto)/100
+    preco_final = preco - desconto 
+    print(f"O valor com desconto do produto {novo_produto} é de R$ {preco_final}")
+
+    condicional = input("Deseja adicionar um novo protudo?, 'sim' ou 'não': ")
+    if condicional == "sim":
+     continue 
+    else:
+       break
