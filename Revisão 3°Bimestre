@@ -1,0 +1,38 @@
+código 1:
+
+print("Ola, Tudo bem?")
+print("Vamos identificar algumas informações do seu nome")
+
+nome = input("Digite seu nome: ")
+if len(nome) == 0:
+    print("Você não digitou nada!")
+else:
+  print(f"Nome digitado: '{nome}', Lembre-se que nomes pessoais começam com letra maiúscula: '{nome.capitalize()}'\n")
+
+caracteres = len(nome)
+print("Seu nome possui", caracteres, "caracteres")
+print("Onde a primeira letra do seu nome é: " + nome[0])
+print("Onde a última letra do seu nome é: " + nome[-1])
+
+Código 2:
+
+nome = input("Digite seu nome: ")
+print(f" Bem vindo de volta {nome}")
+
+while True:
+  horario = input(f"{nome} Para que possamos configurar o horário do seu jogo, infome o seu horário atual (arredonde para a hora completa mais próxima): ")
+
+  if horario >= "6" and horario < "12":
+    print(f" Bom dia {nome} o horário do seu jogo foi ajustado para {horario} horas")
+
+  elif horario >= "12" and horario < "18":
+    print(f" Boa tarde {nome} o horário do seu jogo foi ajustado para {horario} horas")
+
+  elif horario >= "18" and horario < "6":
+    print(f" Boa noite {nome} o horário do seu jogo foi ajustado para {horario} horas")
+
+  confirmacao = input(f"Deseja adicionar um novo horário {nome} ? ")
+  if confirmacao == "sim":
+    continue 
+  else:
+    break
