@@ -1,0 +1,32 @@
+print("Bem vindo ao site da Enel")
+
+while True:
+ consumo = float(input("Digite o consumo de kW do local: "))
+ instalacao = input("Digite o tipo de instalação do local, 'R' residência 'I' industria, 'C' comércio: ")
+
+ if instalacao == "R" and consumo <= 500:
+     valor1 = consumo * 0.40
+     print(f"O valor de consumo da instalação é de {valor1} reais")
+ elif instalacao == "R" and consumo > 500:
+     valor2 = consumo * 0.65
+     print(f"O valor de consumo da instalação é de {valor2} reais")
+
+ if instalacao == "I" and consumo <= 1000:
+     valor3 = consumo * 0.55
+     print(f"O valor de consumo da instalação é de {valor3} reais")
+ elif instalacao == "I" and consumo > 1000:
+     valor4 = consumo * 0.60
+     print(f"O valor de consumo da instalação é de {valor4} reais")
+
+ if instalacao == "C" and consumo <= 5000:
+     valor5 = consumo * 0.55
+     print(f"O valor de consumo da instalação é de {valor5} reais")
+ elif instalacao == "C" and consumo > 5000:
+     valor6 = consumo * 0.60
+     print(f"O valor de consumo da instalação é de {valor6} reais")
+
+ condicional = input("Deseja realizar um novo calculo?, 'sim ou 'não': ")
+ if condicional == "sim":
+  continue
+ else:
+  break 
