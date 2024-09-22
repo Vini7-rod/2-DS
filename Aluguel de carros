@@ -1,0 +1,9 @@
+print("Bem vindo ao site de aluguel de carros")
+
+KM = float(input("Informe a distância percorrida em KM: "))
+
+Dias = float(input("Informe a quantidade de dias de aluguel: "))
+
+preco_aluguel = (KM * 0.15 + Dias * 60)
+
+print(f"O valor do aluguel do seu veículo foi de {preco_aluguel} reais")
