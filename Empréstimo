@@ -1,0 +1,14 @@
+print("Bem vindo ao banco do Brasil")
+
+valor_da_casa = float(input("Digite o valor da casa: "))
+salario = float(input("Digite seu salário: "))
+meses = float(input("Digite a quantidade de meses, que você irá permanecer na casa: "))
+
+def calcular_prestação(valor_da_casa):
+    return valor_da_casa/meses
+
+prestação_mensal = calcular_prestação (valor_da_casa, meses)
+limite_de_prestação = salario * 0.30
+
+print(f"O valor da prestação mensal é de {prestação_mensal}")
+print(f"O limite de 30% do salário é de {limite_de_prestação}")
