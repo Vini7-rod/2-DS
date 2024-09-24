@@ -1,0 +1,26 @@
+class Carro:
+  def __init__(self, marca, modelo, cor, ano, valor):
+    self.marca=marca
+    self.modelo=modelo
+    self.cor=cor
+    self.ano=ano
+    self.valor=valor
+
+class Estoque:
+  def __init__(self):
+    self.carros=[]
+  def adicionar_carro(self, carro):
+    self.carros.append(carro)
+  def mostrar_carros(self):
+    for Carro in self.carros:
+      print(f'{Carro.modelo}, {Carro.marca}')
+carro_1=Carro('Lamborghini','Sesto Elemento','Preto','2015','R$ 12.300.000.00')
+carro_2=Carro('Koenigsegg','Jesko','Branco','2019','16.000.000.00')
+carro_3=Carro('Hennessey','Venom F5','Preto','2020','14.700.000.00')
+carro_4=Carro('Bugatti','Chiron','Preto','2019','2.900.000.00')    
+Estoque=Estoque()      
+Estoque.adicionar_carro(carro_1)
+Estoque.adicionar_carro(carro_2)
+Estoque.adicionar_carro(carro_3)
+Estoque.adicionar_carro(carro_4)
+Estoque.mostrar_carros()
